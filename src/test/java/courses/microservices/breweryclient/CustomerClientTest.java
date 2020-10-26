@@ -23,8 +23,8 @@ public class CustomerClientTest {
   }
 
   @Test
-  void crateCustomer() {
-    CustomerDto dto = CustomerDto.builder().name("e").build();
+  void createCustomer() {
+    CustomerDto dto = CustomerDto.builder().name("Buss").build();
     customerClient.createCustomer(dto);
     assertNotNull(dto);
   }
